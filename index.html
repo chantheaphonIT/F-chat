@@ -6,6 +6,7 @@
     <title>Whatsapp UI</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -50,118 +51,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="chat-box">
-                    <div class="chat-r">
-                        <div class="sp"></div>
-                        <div class="mess mess-r">
-                            <p><img src="img/emoji-1.png" class="emoji"> Hi, Elias
-                            </p>
-                            <div class="check">
-                                <span>4:00 PM</span>
-                                <img src="img/check-2.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat-l">
-                        <div class="mess">
-                            <p>
-                                Oh! hi <img src="img/emoji-2.png" class="emoji">
-                            </p>
-                            <div class="check">
-                                <span>4:00 PM</span>
-                            </div>
-                        </div>
-                        <div class="sp"></div>
-                    </div>
-
-                    <div class="chat-r">
-                        <div class="sp"></div>
-                        <div class="mess mess-r">
-                            <p>
-                                How are you doing?
-                            </p>
-                            <div class="check">
-                                <span>4:00 PM</span>
-                                <img src="img/check-2.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat-l">
-                        <div class="mess">
-                            <p>I'm doing alright. How about you?</p>
-                            <div class="check">
-                                <span>4:00 PM</span>
-                            </div>
-                        </div>
-                        <div class="sp"></div>
-                    </div>
-
-                    <div class="chat-r">
-                        <div class="sp"></div>
-                        <div class="mess mess-r">
-                            <p>
-                                Not too bad. The weather is great isn't it?
-                            </p>
-                            <div class="check">
-                                <span>4:00 PM</span>
-                                <img src="img/check-2.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat-l">
-                        <div class="mess">
-                            <p>
-                                Yes. It's absolutely beautiful today.
-                            </p>
-                            <div class="check">
-                                <span>4:00 PM</span>
-                            </div>
-                        </div>
-                        <div class="sp"></div>
-                    </div>
-
-                    <div class="chat-r">
-                        <div class="sp"></div>
-                        <div class="mess mess-r">
-                            <p>I wish it was like this more frequently.</p>
-                            <div class="check">
-                                <span>4:00 PM</span>
-                                <img src="img/check-2.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat-l">
-                        <div class="mess">
-                            <p>
-                                Me too. <img src="img/heart.png" class="emoji">
-                            </p>
-                            <div class="check">
-                                <span>4:00 PM</span>
-                            </div>
-                        </div>
-                        <div class="sp"></div>
-                    </div>
-                    <div class="chat-r">
-                        <div class="sp"></div>
-                        <div class="mess mess-r">
-                            <p>
-                                So where are you going now?
-                            </p>
-                            <div class="check">
-                                <span>4:00 PM</span>
-                                <img src="img/check-1.png">
-                            </div>
-                        </div>
-                    </div>
+                <div class="chat-box"  id="chat_box">
                 </div>
 
                 <div class="chat-footer">
-                    <img src="img/emo.png" class="emo">
-                    <textarea placeholder="Type a message"></textarea>
-                    <form action="" id="add-book">
-
-                        <button class="send" type="add">Send</button>
-                    </form>
+                    <span class="input-group-text" id="bolder">B</span>
+                    <span class="input-group-text" id="italic">I</span>
+                    <span class="input-group-text" id="underline">U</span>
+                    <input type="text" class="text" id="text" placeholder="Massage...">
+                    <button id="send">Send</button>
                 </div>
             </div>
         </div>
