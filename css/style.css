@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 700px;
+    margin: auto;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #f1f0e8;
+}
+
+.chat-header {
+    display: flex;
+    cursor: pointer;
+}
+
+.profile {
+    width: 100%;
+    background: #036055;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.profile .pp {
+    width: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 32px;
+}
+
+.profile .arrow {
+    display: inline-block;
+    width: 30px;
+    position: absolute;
+    top: 19px;
+    cursor: pointer;
+}
+
+.profile h2 {
+    display: inline-block;
+    line-height: 60px;
+    vertical-align: bottom;
+    color: #fff;
+    font-size: 20px;
+}
+
+.profile span {
+    color: #ccc;
+    position: absolute;
+    top: 42px;
+    left: 100px;
+    font-size: 14px;
+}
+
+.right .icon {
+    display: inline-block;
+    width: 25px;
+    margin-left: 10px;
+}
+
+.profile .left {
+    flex: 1;
+}
+
+.chat-box {
+    background: url('../img/bg.jpeg');
+    background-attachment: fixed;
+    padding-left: 20px;
+    overflow-y: scroll;
+    flex: 1;
+}
+
+.chat-box .img_chat {
+    width: 280px;
+}
+
+.chat-r {
+    display: flex;
+}
+
+.chat-r .sp {
+    flex: 1;
+}
+
+.chat-l {
+    display: flex;
+}
+
+.chat-l .sp {
+    flex: 1;
+}
+
+.chat-box .mess {
+    max-width: 300px;
+    background: #F7FCF6;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.chat-box .mess p {
+    word-break: break-all;
+    font-size: 18px;
+}
+
+.chat-box .mess-r {
+    background: #E2FFC7;
+}
+
+.chat-box .emoji {
+    width: 20px;
+}
+
+.chat-box .check {
+    float: right;
+}
+
+.chat-box .check img {
+    width: 20px;
+}
+
+.chat-box .check span {
+    color: #888;
+    font-size: 12px;
+    font-weight: 700px;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #aaa;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.chat-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    position: relative;
+    cursor: pointer;
+}
+
+.chat-footer textarea {
+    display: block;
+    flex: 1;
+    width: 100%;
+    height: 50px;
+    border-radius: 60px;
+    margin: 5px;
+    padding: 10px;
+    outline: none;
+    font-size: 19px;
+    padding-left: 40px;
+    padding-right: 90px;
+    border: 2px solid #ccc;
+    color: #555;
+    resize: none;
+}
+
+.chat-footer .mic {
+    display: block;
+    width: 55px;
+    height: 55px;
+    margin-right: 20px;
+}
+
+.chat-footer .emo {
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+
+.chat-footer .icons {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+.chat-footer .icons img {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Create two equal columns that floats next to each other */
+
+.column1 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 600px;
+    /* Should be removed. Only for demonstration */
+}
+
+.container {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    height: 600px;
+    /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    -ms-flex: 30%;
+    /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(3, 3, 3);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+
+/* Style the navigation bar links */
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    -ms-flex: 30%;
+    /* IE10 */
+    flex: 30%;
+    padding: 20px;
+}
+
+
+/* Right-aligned link */
+
+.navbar a.right {
+    float: right;
+}
+
+
+/* Change color on hover */
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: rgb(197, 193, 193);
+}
+
+
+/* Active/current link */
+
+.navbar a.active {
+    background-color: rgb(8, 8, 8);
+    color: white;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: none;
+    margin-top: 400px;
+}
+
+input {
+    background-color: white;
+    padding: 20px;
+    width: 70%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.send {
+    border-radius: 2px;
+    background-color: #007bff;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 19px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+    margin: 5px;
+}
