@@ -15,7 +15,7 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: white;
+    background-color: rgb(3, 3, 3);
     position: sticky;
     position: -webkit-sticky;
     top: 0;
