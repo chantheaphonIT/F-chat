@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+body {
+    background-color: #aaa;
+}
+
 .container {
     width: 700px;
     margin: auto;
@@ -14,7 +18,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: #f1f0e8;
+    background: url('../img/bg.jpeg');
 }
 
 .chat-header {
@@ -75,7 +79,7 @@
 
 .chat-box {
     height: 50vh;
-    background: url('../img/bg.jpeg');
+    /* background: url('../img/bg.jpeg'); */
     background-attachment: fixed;
     padding-left: 20px;
     overflow-y: scroll;
@@ -316,47 +320,54 @@ input {
     border-radius: 3px;
 }
 
-.msg{
+.msg {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     overflow-y: auto;
 }
-.msg span{
+
+.msg span {
     display: flex;
     justify-content: flex-end;
     margin: 0.75rem;
     padding: 0.5rem;
     background-color: #ddd;
     border-radius: 25px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     word-break: break-all;
 }
-#send{
+
+#send {
     height: 50px;
     width: 13%;
     font-size: 20px;
     font-weight: bold;
-    background:#007bff ;
+    background: #007bff;
 }
-.text{
+
+.text {
     width: 73%;
     border-radius: 7px;
     outline: none;
 }
-.chat-footer span{
-    border:1px solid rgb(51, 51, 53);
+
+.chat-footer span {
+    border: 1px solid rgb(51, 51, 53);
     padding: 10px;
 }
-#bolder{
+
+#bolder {
     font-weight: bolder;
 }
-#italic{
+
+#italic {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
 }
-#underline{
+
+#underline {
     text-decoration: underline;
     font-weight: bolder;
 }
