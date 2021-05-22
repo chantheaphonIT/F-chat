@@ -7,9 +7,26 @@
     <link rel="stylesheet" href="/public/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="/public/js/app.js" defer></script>
+    <script src="/server.js" defer></script>
 </head>
 
 <body>
+    <div class="class-chat"> 
+        <label for="">
+        <button id="login">LOGIN</button>
+        <button id="sing">CREATE</button>
+    </label>    
+    </div>
+    <div class="form">
+        <form >
+            Username
+            <br><input type="text" id="name" placeholder="Username"><br>
+            password
+            <br><input type="password" id="pass" placeholder="Passord"><br>
+            <button id="log">LOGIN</button>
+            <p>Forget password?</p>
+        </form>
+    </div>
     <div class="row">
         <div class="column1" style="background-color:#aaa;">
             <div class="profile">
@@ -64,6 +81,8 @@
             </div>
         </div>
     </div>
+
+
 
 </body>
 
