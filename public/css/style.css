@@ -4,10 +4,10 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
+/* 
 .row {
     display: none;
-}
+} */
 
 .class-chat {
     background: url('../img/7.png');
@@ -60,6 +60,9 @@
     margin-bottom: 10px;
     background: rgb(70, 70, 250);
     color: #fff;
+}
+.row{
+    display: none;
 }
 
 body {
