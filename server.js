@@ -9,8 +9,9 @@ app.use(express.urlencoded());
 app.use(express.static('public'));
 
 let users = [
-    {username: "sreypich", color: "red", text: "hello everyone how are you"},
-    {username: "chanthea", color: "green", text: "yes hello i'm fine. thank"},
+    {username: "sreypich", password:"123", color: "red"},
+    {username: "chanthea", password:"123", color: "green"},
+    {username: "him", password:"000", color: "red"}
 
 ]
 app.get ('/users',(req,res)=>res.send(users))
