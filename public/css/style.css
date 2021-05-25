@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+
 /* 
 .row {
     display: none;
@@ -61,7 +63,8 @@
     background: rgb(70, 70, 250);
     color: #fff;
 }
-.row{
+
+.row {
     display: none;
 }
 
@@ -140,7 +143,7 @@ body {
 
 .chat-box {
     height: 50vh;
-    /* background: url('../img/bg.jpeg'); */
+    background: url('../img/bg.jpeg');
     background-attachment: fixed;
     padding-left: 20px;
     overflow-y: scroll;
