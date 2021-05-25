@@ -1,6 +1,5 @@
-const IP = "192.168.1.9";
-const PORT = 3000;
-const GET_MESSAGE_REQUEST = "http://" + IP + ":" + PORT + "/message";
+
+const PORT =5000;
 
 function addfood(event) {
     let chat_box = document.getElementById('chat_box');

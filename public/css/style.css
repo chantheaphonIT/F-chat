@@ -10,7 +10,7 @@
 } */
 
 .class-chat {
-    background: url('../img/7.png');
+    background: url('img/7.png');
     height: 100vh;
     background-size: cover;
     text-align: center;
@@ -140,7 +140,7 @@ body {
 
 .chat-box {
     height: 50vh;
-    /* background: url('../img/bg.jpeg'); */
+    background: url('../img/bg.jpeg');
     background-attachment: fixed;
     padding-left: 20px;
     overflow-y: scroll;
