@@ -1,5 +1,5 @@
-const PORT = 5000;
 
+const PORT =5000;
 
 function addfood(event) {
     let chat_box = document.getElementById('chat_box');
@@ -10,8 +10,6 @@ function addfood(event) {
     van.appendChild(span);
     chat_box.appendChild(van);
     text.value = "";
-
-
 };
 
 const text = document.getElementById('text');
@@ -19,27 +17,10 @@ const addForm = document.querySelector("#send");
 addForm.addEventListener("click", addfood);
 //.........hide show.......
 
-function longinDisplay() {
-    form.style.display = "block";
-    chat.style.display = "none";
-    row.style.display = 'none';
-    console.log("hello")
+let arrow = document.querySelector('.arrow')
+arrow.addEventListener('click', goBack);
 
+function goBack() {
+    window.location.href = "http://localhost:5000/login.html";
 }
-
-function displayMwssage() {
-    event.preventDefault();
-    form.style.display = "none";
-    chat.style.display = "none";
-    row.style.display = 'block';
-}
-let row = document.querySelector('.row');
-let log = document.getElementById('log');
-log.addEventListener('click', displayMwssage);
-let chat = document.querySelector('.class-chat');
-
-let form = document.querySelector('.form');
-
-
-let btnf = document.getElementById('login');
-btnf.addEventListener('click', longinDisplay);
+event.preventDefault();
