@@ -4,11 +4,11 @@
 }
 
 .chat {
-    width: 40%;
-    margin-left: 30%;
-    height: 90vh;
-    background-color: #888;
+    width: 70%;
+    margin-left: 15%;
+    background-image: url(https://images.all-free-download.com/images/graphicthumb/blue_abstract_background_310971.jpg);
     border-radius: 5px;
+    background-size: cover;
 }
 
 .chat-header {
@@ -78,22 +78,6 @@
 
 .chat-box .img_chat {
     width: 280px;
-}
-
-.chat-r {
-    display: flex;
-}
-
-.chat-r .sp {
-    flex: 1;
-}
-
-.chat-l {
-    display: flex;
-}
-
-.chat-l .sp {
-    flex: 1;
 }
 
 .chat-box .mess {

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>F-chat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/app.js" defer></script>
+    <script src="../server.js" defer></script>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="chat">
+            <div class="chat-header">
+                <div class="profile">
+                    <div class="left">
+                        <img src="img/arrow.png" class="arrow">
+                        <img src="img/pp.png" class="pp">
+                        <h2>CHANTHEA PHON</h2>
+                        <span>online</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/video.png" class="icon">
+                        <img src="img/phone.png" class="icon">
+                        <img src="img/more.png" class="icon">
+                    </div>
+                </div>
+            </div>
+            <div class="chat-box" id="chat_box">
+            </div>
+
+            <div class="chat-footer">
+                <span class="input-group-text" id="bolder">B</span>
+                <span class="input-group-text" id="italic">I</span>
+                <span class="input-group-text" id="underline">U</span>
+                <input type="text" class="text" id="text" placeholder="Massage...">
+                <span class="input-group-text" id="bolder">🙂</span>
+                <button id="send">Send</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
