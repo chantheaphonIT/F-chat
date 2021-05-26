@@ -11,31 +11,32 @@ app.use(express.urlencoded());
 // app.get('/', (req, res) => res.send("Hello Project"))
 
 let users = [
-    {username: "sreypich", password: "123"},
-    {username: "chanthea",password: "123"}
+    { username: "sreypich", password: "123" },
+    { username: "chanthea", password: "123" }
 ];
 
 app.use(express.static('public'));
 
-app.post("/login",(req, res) =>{
-   let name = req.body.name;
-   let pass = req.body.password;
-   let status = false;
-   for(let user of users){
-       if (name === user.username && pass === user.password){
-           status = true;
-       }
-   }
-   res.send(status);
+app.post("/login", (req, res) => {
+    let name = req.body.name;
+    let pass = req.body.password;
+    let status = false;
+    for (let user of users) {
+        if (name === user.username && pass === user.password) {
+            status = true;
+        }
+    }
+    res.send(status);
 });
 let messages = [];
 messages = JSON.parse(fs.readFileSync("data.json"));
 app.post("/send", (req, res) => {
     let message = req.body;
     messages.push(message);
+    res.send(message)
     console.log(messages);
-    fs.writeFileSync("data.json", JSON.stringify(messages)); 
+    fs.writeFileSync("data.json", JSON.stringify(messages));
 })
-app.get("/getmessage",(req, res)=>{
+app.get("/getmessage", (req, res) => {
     res.send(messages);
 })

@@ -13,10 +13,10 @@ function displayMessage() {
         let data = response.data;
         for (message of data) {
             const fieldset = document.createElement("fieldset");
-            if(message.name=="sreypich"){
-                fieldset.style.backgroundColor = "yellow";
-            }else{
-                fieldset.style.backgroundColor = "blue";
+            if (message.name == "sreypich") {
+                fieldset.style.backgroundColor = "orange";
+            } else {
+                fieldset.style.backgroundColor = "green";
             }
             const spanOfInput = document.createElement("span");
             spanOfInput.textContent = message.name + " : " + message.text;
@@ -24,6 +24,11 @@ function displayMessage() {
             storeOfNewUser.appendChild(fieldset);
         }
     })
+    const listOfUser = document.querySelector(".listOfUser");
+
+    if (listOfUser !== null) {
+        listOfUser.remove();
+    }
 }
 
 

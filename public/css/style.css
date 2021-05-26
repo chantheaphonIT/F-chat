@@ -3,10 +3,16 @@
     margin: 0;
 }
 
+body {
+    /* background-image: url(http://cdn.lowgif.com/small/53f8e11b67e93a05-.gif); */
+    background-size: cover;
+    background-color: #73b5fc;
+}
+
 .chat {
     width: 70%;
     margin-left: 15%;
-    background-image: url(https://images.all-free-download.com/images/graphicthumb/blue_abstract_background_310971.jpg);
+    background-image: url(http://cdn.lowgif.com/small/53f8e11b67e93a05-.gif);
     border-radius: 5px;
     background-size: cover;
 }
@@ -217,20 +223,16 @@ input {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
     word-break: break-all;
 }
-fieldset{
+
+fieldset {
     border-radius: 20px;
     padding: 5px;
     border: 1px solid rgb(71, 44, 224);
     display: flex;
-    margin-left: 500px;
-    max-width:max-content;
-    
+    /* margin-left: 500px; */
+    max-width: max-content;
     margin-top: 10px;
-    
-   
-    
-  } 
-  
+}
 
 #send {
     height: 40px;
