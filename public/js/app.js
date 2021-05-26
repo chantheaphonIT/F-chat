@@ -1,26 +1,34 @@
+function sendMesage() {
+    let message = { name: localStorage.getItem("user"), text: messa.value };
+    axios.post(url + "/send", message).then((res) => {
+        displayMessage();
+    })
 
-const PORT =5000;
-
-function addfood(event) {
-    let chat_box = document.getElementById('chat_box');
-    let van = document.createElement('div');
-    van.className = 'msg';
-    let span = document.createElement('span');
-    span.textContent = text.value;
-    van.appendChild(span);
-    chat_box.appendChild(van);
-    text.value = "";
-};
-
-const text = document.getElementById('text');
-const addForm = document.querySelector("#send");
-addForm.addEventListener("click", addfood);
-//.........hide show.......
-
-let arrow = document.querySelector('.arrow')
-arrow.addEventListener('click', goBack);
-
-function goBack() {
-    window.location.href = "http://localhost:5000/login.html";
 }
-event.preventDefault();
+
+function displayMessage() {
+    let storeOfNewUser = document.querySelector("#chat_box");
+    let request = url + "/getmessage";
+    axios.get(request).then((response) => {
+        let data = response.data;
+        for (message of data) {
+            const fieldset = document.createElement("fieldset");
+            if(message.name=="sreypich"){
+                fieldset.style.backgroundColor = "yellow";
+            }else{
+                fieldset.style.backgroundColor = "blue";
+            }
+            const spanOfInput = document.createElement("span");
+            spanOfInput.textContent = message.name + " : " + message.text;
+            fieldset.appendChild(spanOfInput);
+            storeOfNewUser.appendChild(fieldset);
+        }
+    })
+}
+
+
+let messa = document.querySelector("#text");
+let btnSend = document.querySelector("#send");
+btnSend.addEventListener("click", sendMesage);
+let url = "http://localhost:5000";
+displayMessage();
