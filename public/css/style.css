@@ -4,9 +4,9 @@
 }
 
 body {
-    /* background-image: url(http://cdn.lowgif.com/small/53f8e11b67e93a05-.gif); */
+    background-image: url(https://img.lovepik.com/photo/40132/7681.jpg_wh860.jpg);
     background-size: cover;
-    background-color: #73b5fc;
+    /* background-color: #73b5fc; */
 }
 
 .chat {
@@ -24,7 +24,7 @@ body {
 
 .profile {
     width: 100%;
-    background: rgb(70, 112, 250);
+    background: rgb(4, 27, 100);
     display: flex;
     align-items: center;
     height: 60px;
@@ -122,9 +122,9 @@ fieldset {
 #send {
     height: 40px;
     width: 9%;
-    font-size: 15px;
+    color: white;
     font-weight: bold;
-    background: #007bff;
+    background: rgb(4, 27, 100);
     border-radius: 5px;
 }
 
