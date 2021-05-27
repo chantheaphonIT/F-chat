@@ -1,4 +1,8 @@
 function sendMesage() {
+
+    const ding = document.getElementById("dingSound");
+    ding.play();
+
     let message = { name: localStorage.getItem("user"), text: messa.value };
     axios.post(url + "/send", message).then((res) => {
         displayMessage();
@@ -29,7 +33,13 @@ function displayMessage() {
     if (listOfUser !== null) {
         listOfUser.remove();
     }
+
+    // const ding = document.getElementById("dingSound");
+    // ding.play();
+    messa.value = "";
+
 }
+
 
 
 let messa = document.querySelector("#text");

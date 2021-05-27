@@ -1,16 +1,16 @@
-function getLogin(){
-  
-    let user = {name:username.value, password:password.value};
-    axios.post(url +"/login", user).then((res) => {
-        if(res.data){
+function getLogin() {
+
+    let user = { name: username.value, password: password.value };
+    axios.post(url + "/login", user).then((res) => {
+        if (res.data) {
             localStorage.setItem("user", username.value);
 
             window.location.pathname = "home.html";
-        }else{
-            alert("try again");
+        } else {
+            alert("Please try again!");
         }
     })
-    
+
 
 }
 let username = document.querySelector("#user");
