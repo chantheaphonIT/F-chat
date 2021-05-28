@@ -126,6 +126,7 @@ fieldset {
     font-weight: bold;
     background: rgb(4, 27, 100);
     border-radius: 5px;
+    /* margin-left: 1px; */
 }
 
 .text {
@@ -138,4 +139,10 @@ fieldset {
 .chat-footer span {
     border: 1px solid rgb(51, 51, 53);
     padding: 10px;
+}
+
+#emoji-btn {
+    /* margin-left: 1%; */
+    height: 40px;
+    width: 5%;
 }

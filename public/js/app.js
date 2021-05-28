@@ -40,6 +40,11 @@ function displayMessage() {
 
 }
 
+function backLogin() {
+    window.location.href = "../index.html"
+}
+let btnBack = document.querySelector('.arrow');
+btnBack.addEventListener('click', backLogin);
 
 
 let messa = document.querySelector("#text");
@@ -47,3 +52,15 @@ let btnSend = document.querySelector("#send");
 btnSend.addEventListener("click", sendMesage);
 let url = "http://localhost:5000";
 displayMessage();
+
+
+let btnemoji = document.getElementById('emoji-btn');
+const picker = new EmojiButton();
+document.addEventListener('DOMContentLoaded', () => {
+    picker.on('emoji', emoji => {
+        document.querySelector('#text').value += emoji;
+    });
+    btnemoji.addEventListener('click', () => {
+        picker.togglePicker(btnemoji);
+    });
+});
