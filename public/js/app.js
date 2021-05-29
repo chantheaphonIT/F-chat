@@ -50,7 +50,7 @@ btnBack.addEventListener('click', backLogin);
 let messa = document.querySelector("#text");
 let btnSend = document.querySelector("#send");
 btnSend.addEventListener("click", sendMesage);
-let url = "https://f-chat-app-project.herokuapp.com/";
+let url = "https://f-chat-app-project.herokuapp.com";
 displayMessage();
 
 
