@@ -11,7 +11,7 @@ function sendMesage() {
 }
 
 function displayMessage() {
-    let storeOfNewUser = document.querySelector("#chat_box");
+    let newUser = document.querySelector("#chat_box");
     let request = url + "/getmessage";
     axios.get(request).then((response) => {
         let data = response.data;
@@ -22,10 +22,10 @@ function displayMessage() {
             } else {
                 fieldset.style.backgroundColor = "green";
             }
-            const spanOfInput = document.createElement("span");
-            spanOfInput.textContent = message.name + " : " + message.text;
-            fieldset.appendChild(spanOfInput);
-            storeOfNewUser.appendChild(fieldset);
+            const span = document.createElement("span");
+            span.textContent = message.name + " : " + message.text;
+            fieldset.appendChild(span);
+            newUser.appendChild(fieldset);
         }
     })
     const listOfUser = document.querySelector(".listOfUser");
@@ -34,12 +34,12 @@ function displayMessage() {
         listOfUser.remove();
     }
 
-    // const ding = document.getElementById("dingSound");
-    // ding.play();
+    const ding = document.getElementById("dingSound");
+    ding.play();
     messa.value = "";
 
 }
-
+/// log out////
 function backLogin() {
     window.location.href = "../index.html"
 }
@@ -54,13 +54,11 @@ let url = "http://localhost:5000";
 displayMessage();
 
 
-let btnemoji = document.getElementById('emoji-btn');
+let emoji = document.getElementById('emoji-btn');
 const picker = new EmojiButton();
-document.addEventListener('DOMContentLoaded', () => {
-    picker.on('emoji', emoji => {
-        document.querySelector('#text').value += emoji;
-    });
-    btnemoji.addEventListener('click', () => {
-        picker.togglePicker(btnemoji);
-    });
+picker.on('emoji', emoji => {
+    document.querySelector('#text').value += emoji;
+});
+emoji.addEventListener('click', () => {
+    picker.togglePicker(emoji);
 });

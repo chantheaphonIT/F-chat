@@ -1,3 +1,4 @@
+//log in///
 function getLogin() {
 
     let user = { name: username.value, password: password.value };
