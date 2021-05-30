@@ -17,6 +17,8 @@ let users = [
 
 app.use(express.static('public'));
 
+app.get("/users", (req, res) => res.send(users))
+
 app.post("/login", (req, res) => {
     let name = req.body.name;
     let pass = req.body.password;
