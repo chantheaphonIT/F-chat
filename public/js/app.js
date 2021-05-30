@@ -1,3 +1,4 @@
+// send mesage///
 function sendMesage() {
 
     const ding = document.getElementById("dingSound");
@@ -9,10 +10,11 @@ function sendMesage() {
     })
 
 }
-
+/// show message //
 function displayMessage() {
     let newUser = document.querySelector("#chat_box");
     let request = url + "/getmessage";
+
     axios.get(request).then((response) => {
         let data = response.data;
         for (message of data) {
@@ -20,10 +22,12 @@ function displayMessage() {
             if (message.name == "sreypich") {
                 fieldset.style.backgroundColor = "orange";
             } else {
-                fieldset.style.backgroundColor = "green";
+                fieldset.style.backgroundColor = "white";
             }
             const span = document.createElement("span");
+
             span.textContent = message.name + " : " + message.text;
+
             fieldset.appendChild(span);
             newUser.appendChild(fieldset);
         }
@@ -50,9 +54,8 @@ btnBack.addEventListener('click', backLogin);
 let messa = document.querySelector("#text");
 let btnSend = document.querySelector("#send");
 btnSend.addEventListener("click", sendMesage);
-let url = "https://f-chat-app-project.herokuapp.com";
+let url = "http://localhost:5000";
 displayMessage();
-
 
 let emoji = document.getElementById('emoji-btn');
 const picker = new EmojiButton();
@@ -62,3 +65,4 @@ picker.on('emoji', emoji => {
 emoji.addEventListener('click', () => {
     picker.togglePicker(emoji);
 });
+// bold and italic

@@ -19,4 +19,4 @@ let password = document.querySelector("#pwd");
 let btnLogign = document.querySelector("#btn-login");
 btnLogign.addEventListener("click", getLogin);
 
-let url = "https://f-chat-app-project.herokuapp.com";
+let url = "http://localhost:5000";
