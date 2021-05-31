@@ -18,7 +18,7 @@ let users = [
 app.use(express.static('public'));
 
 app.get("/users", (req, res) => res.send(users))
-
+    //login condition//
 app.post("/login", (req, res) => {
     let name = req.body.name;
     let pass = req.body.password;
@@ -29,6 +29,7 @@ app.post("/login", (req, res) => {
         }
     }
     res.send(status);
+    // can go to fontend
 });
 let messages = [];
 messages = JSON.parse(fs.readFileSync("data.json"));

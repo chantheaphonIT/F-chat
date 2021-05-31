@@ -8,6 +8,7 @@ function getLogin() {
             localStorage.setItem("password", password.value);
 
             window.location.pathname = "home.html";
+            // other page
         } else {
             alert("Please try again!");
         }
@@ -17,7 +18,8 @@ function getLogin() {
 }
 let username = document.querySelector("#user");
 let password = document.querySelector("#pwd");
+//when we click btn it will show//
 let btnLogign = document.querySelector("#btn-login");
 btnLogign.addEventListener("click", getLogin);
 
-let url = "http://localhost:5000";
+let url = "https://f-chat-app-project.herokuapp.com";

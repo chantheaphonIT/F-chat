@@ -54,7 +54,7 @@ btnBack.addEventListener('click', backLogin);
 let messa = document.querySelector("#text");
 let btnSend = document.querySelector("#send");
 btnSend.addEventListener("click", sendMesage);
-let url = "http://localhost:5000";
+let url = "https://f-chat-app-project.herokuapp.com";
 displayMessage();
 
 let emoji = document.getElementById('emoji-btn');
